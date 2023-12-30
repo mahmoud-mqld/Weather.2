@@ -183,7 +183,7 @@ col div {
     font-size: clamp(.5rem, 2.5vw, 1rem);
     margin-top: -7px;
 }
-
+/* 
 .future-forecast {
     margin-top: 1rem;
     background: linear-gradient(135deg, #00feba, #5b548a);
@@ -198,21 +198,8 @@ col div {
     overflow-y: visible;
     overflow-x: scroll;
 }
+ */
 
-.future-forecast{
-    margin-top: 1rem;
-    background: linear-gradient(135deg ,#00feba , #5b548a);
-    padding: 25px;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    color:white;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    overflow-y: visible;
-    overflow-x: scroll;
-}
 
 
 
@@ -265,9 +252,22 @@ col div {
     font-weight: 100;
     font-size: 25px;
 }
+.future-forecast{
+    margin-top: 1rem;
+    background: linear-gradient(135deg ,#00feba , #5b548a);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: visible;
+    overflow-x: scroll;
+}
 
-
-@media only screen and (max-width:730px) {
+@media only screen and (max-width:600px) {
 
 
     
