@@ -209,7 +209,7 @@ col div {
     color:white;
     width: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     overflow-y: visible;
     overflow-x: scroll;
 }
@@ -323,12 +323,17 @@ col div {
         height: 30px;
         border-radius: 30px;
         font-size: clamp(.5rem, 2.5vw, 1rem);
-        width: clamp(3em, 4em, 5em);
+        width: 7em;
     }
     .future-forecast {
 padding-inline-start:40px 0;
 overflow-x: scroll;
+
 margin:2px ;
+margin-top: 0;
+padding-top: 0;
+justify-content: start;
+
     }
 
 }
