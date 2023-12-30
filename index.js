@@ -83,7 +83,7 @@ forecastDays.addEventListener("input", () => {
 async function getData(city) {
   // let res = await fetch(api+city+'?key='+key+'&q='+city+'&aqi=no')
   let res = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=4090e100f6f248feb76100532232312
+    `https://api.weatherapi.com/v1/forecast.json?key=4090e100f6f248feb76100532232312
     &q=${city}
     &aqi=yes&days=${+forecastDays.value+1}`
   );
