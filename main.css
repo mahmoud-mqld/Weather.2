@@ -199,6 +199,23 @@ col div {
     overflow-x: scroll;
 }
 
+.future-forecast{
+    margin-top: 1rem;
+    background: linear-gradient(135deg ,#00feba , #5b548a);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    overflow-y: visible;
+    overflow-x: scroll;
+}
+
+
+
 
 .future-forecast .weather-forecast {
     display: flex;
@@ -252,9 +269,28 @@ col div {
 
 @media only screen and (max-width:730px) {
 
+
+    
+.weather-forecast .weather-forecast-item {
+    text-align: center;
+    /* gap: 3px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 10px; */
+    border: 1px solid #eee;
+    /* padding: 20px; */
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    width: clamp(12.5rem,20vw, 20rem);
+
+}
+
     .weather-forecast .weather-forecast-item h5 {
-        font-weight: 100;
-        font-size: 15px;
+        font-weight: 300;
+        font-size: 18px;
+        padding-bottom: 10px;
     }
 
     .weather-forecast .weather-forecast-item .temp {
@@ -272,9 +308,27 @@ col div {
     }
 
     .weather-forecast .weather-forecast-item .day {
-        font-size: 12px;
+        font-size: 14px;
         padding: 2px 7px;
 
+    }
+
+    .search input.days {
+        width: 20%;
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 5px 10px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: clamp(.5rem, 2.5vw, 1rem);
+        width: clamp(3em, 4em, 5em);
+    }
+    .future-forecast {
+padding-inline-start:40px 0;
+overflow-x: scroll;
+margin:2px ;
     }
 
 }
